@@ -1,0 +1,19 @@
+{
+  "name": "butterfly",
+  "version": "1.0.0",
+  "description": "Kadeřnictví butterfly",
+  "main": "butterfly",
+  "dependencies": {
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-uglify": "^0.9.2"
+  },
+  "scripts": {
+    "test": "butterfly"
+  },
+  "author": "Václav Brzezina",
+  "license": "ISC"
+}
