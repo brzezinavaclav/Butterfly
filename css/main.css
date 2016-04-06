@@ -63,16 +63,23 @@ h3 {
     color: #fff;
     background-color: transparent;
 }
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a {
     color: #fbf5db;
     outline: none;
     font-family: Segoe Script;
     font-size: 18px;
     background-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently*/
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus  {
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:focus  {
     color: #533f2b;
     background-color: transparent;
+    outline: none;
 }
 .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
     padding-top: 10px;
@@ -207,12 +214,14 @@ h3 {
     text-align: center;
 }
 h1.section-heading {
+    font-family: Segoe Script;
     font-size: 32px;
     margin-top: 30px;
     text-transform: uppercase;
     font-weight: 600;
 }
 h2.section-heading {
+    font-family: Segoe Script;
     font-size: 26px;
     text-align: left;
     margin-top: 30px;
@@ -357,13 +366,4 @@ footer a, footer a:hover, footer a:focus{
     .about {
         padding-top: 20px;
     }
-}
- .noselect {
-     -webkit-touch-callout: none; /* iOS Safari */
-     -webkit-user-select: none;   /* Chrome/Safari/Opera */
-     -khtml-user-select: none;    /* Konqueror */
-     -moz-user-select: none;      /* Firefox */
-     -ms-user-select: none;       /* IE/Edge */
-     user-select: none;           /* non-prefixed version, currently*/
-     cursor: default;
 }
