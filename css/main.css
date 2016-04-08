@@ -319,6 +319,8 @@ footer a, footer a:hover, footer a:focus{
 }
 #footer-logo > img{
     margin-right: 6px;
+    width: 150px;
+    padding-top: 3px;
 }
 #footer-copy{
     float: right;
