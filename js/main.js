@@ -34,11 +34,11 @@ $(function() {
 window.onload = function () {
     var viewportWidth =  $(window).width();
     var latit = 50.72232;
-    var longtit = 15.17495;
+    var longtit = 15.1749;
     if (viewportWidth > 776) {
         var styles = [
             {
-                featureType: 'all', // set the water color
+                featureType: 'all',
                 stylers: [
                     { "hue": "#8D7551" },
                 ]
@@ -64,6 +64,8 @@ window.onload = function () {
         var map = new google.maps.Map(div, options);
         var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
         map.mapTypes.set('Styled', styledMapType);
-        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.72343,15.17092), icon: 'img/marker.png'});
+        marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.72343,15.17092), icon: './images/marker.svg', });
+        infowindow = new google.maps.InfoWindow({content:'<strong>Kadeřnictví butterfly</strong>'});
+        google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);
     }
 }
