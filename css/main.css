@@ -38,7 +38,7 @@ h3 {
     outline: none;
     height: 50px;
     width: 150px;
-    background-image: url("../images/logo-small.png");
+    background-image: url("../images/logo.svg");
     margin-left: 15px;
     background-repeat: no-repeat;
     background-position: 0px 6px;
@@ -303,7 +303,7 @@ hr{
 }
 footer{
     background-color: #8d7551;
-    padding: 20px 0px;
+    padding: 10px 0px;
     color: #fff;
     text-shadow: 0px 1px 1px #111;
 }
@@ -314,20 +314,29 @@ footer a, footer a:hover, footer a:focus{
 .img-responsive{
     width: 100%;
 }
-#footer-logo{
+#footer-logo {
     text-align: center;
+}
+#footer-logo > img{
+    margin-right: 6px;
+    width: 150px;
+    padding-top: 3px;
 }
 #footer-copy{
     float: right;
     width: 100%;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 15px;
+    font-size: 14px;
 }
 @media(min-width: 460px) {
 
     #footer-logo{
         text-align: left;
         float: left;
+    }
+    #footer-logo > img{
+        width: 170px;
     }
     #footer-copy{
         float: right;
